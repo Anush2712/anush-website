@@ -1,4 +1,4 @@
-# Anush Choudhary - Personal Website
+# My Personal Website
 
 Welcome to my personal portfolio website! This project showcases my academic background, personal projects, and professional skills. It is designed to be responsive, user-friendly, and visually appealing.
 
