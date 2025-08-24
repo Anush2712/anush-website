@@ -227,8 +227,8 @@ tr:nth-child(even) {
 .projects h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 28px;
-    color: #6F2DA8;
+    font-size: 30px;
+    color: #ffffff;
 }
 
 .projects h3 {
@@ -368,66 +368,126 @@ footer {
 /* ===========================
    Responsive Breakpoints
    =========================== */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    /* Navigation (all in one line) */
+    nav {
+        padding: 12px;
+        text-align: center;
+        overflow-x: auto;   /* allows horizontal scroll if too many links */
+        white-space: nowrap;
+    }
+
     nav a {
-        margin: 0 10px;
-        font-size: 16px;
+        display: inline-block;
+        margin: 0 6px;
+        font-size: 0.9rem;
+        padding: 6px 8px;
+        border-radius: 6px;
+        background: transparent;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+        background: #6F2DA8;
+        color: #fff;
+    }
+
+    /* Profile Section */
+    .profile-section {
+        padding: 30px 15px;
     }
 
     .profile-img {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
+        border: 3px solid #6F2DA8;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.5);
     }
 
     .profile-name {
         font-size: 1.6rem;
-        font-family: 'Playfair Display', serif;
+        margin-top: 12px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.4);
     }
 
     .profile-role {
         font-size: 1rem;
-        
+        color: #ccc;
     }
 
+    /* Social Links */
     .social-links {
+        margin-top: 15px;
         gap: 15px;
     }
 
     .social-links a {
-        font-size: 1.6rem;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #444;
+        border-radius: 50%;
+        font-size: 1.4rem;
     }
 
-    .projects,
-    .contact-info,
-    .bookshelf {
-        width: 90%;
+    .social-links a:hover {
+        background: #6F2DA8;
+        transform: scale(1.15);
+    }
+
+    /* Projects */
+    .projects {
+        width: 95%;
         padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .profile-section {
-        padding: 40px 10px;
+        border-radius: 10px;
     }
 
-    .profile-img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .profile-name {
+    .projects h2 {
         font-size: 1.4rem;
     }
 
-    .profile-role {
+    .project-list li {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    /* Bookshelf */
+    .bookshelf {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .book-container img {
+        width: 120px;
+        height: 180px;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        width: 95%;
+        padding: 20px;
+        font-size: 0.95rem;
+    }
+
+    .contact-list li {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact-list i {
+        font-size: 1.5rem;
+    }
+
+    /* QR Code */
+    .qr-code {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qr-code-section p {
         font-size: 0.9rem;
-    }
-
-    .social-links {
-        gap: 10px;
-    }
-
-    .social-links a {
-        font-size: 1.4rem;
     }
 }
