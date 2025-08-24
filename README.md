@@ -2,11 +2,11 @@
 
 Welcome to my personal portfolio website! This project showcases my academic background, personal projects, and professional skills. It is designed to be responsive, user-friendly, and visually appealing.
 
----
+```
 
 ## 📂 Project Structure
 /project-folder
-│
+project-folder/
 ├── index.html # Homepage
 ├── about.html # About Me page
 ├── Book Shelf.html # Book Shelf page
@@ -16,11 +16,10 @@ Welcome to my personal portfolio website! This project showcases my academic bac
 └── images/ # Store images and media
 ├── Anush pic2 for webiste.jpg
 ├── Haunting Adaline.jpg
-├── QR code.png
+└── QR code.png
 
 
-
----
+```
 
 ## 🌟 Features
 
