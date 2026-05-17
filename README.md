@@ -1,73 +1,52 @@
- Welcome to your Lovable project
+# Anush Choudhary — Portfolio
 
-## Project info
+Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Features GSAP scroll animations, a Bayer-dithered canvas blob on the hero, and a custom cursor.
 
-**URL**: https://lovable.dev/projects/4803159b-4b71-4749-9874-be2c3ecfc656
+Live: **https://anush2712.github.io/anush-website/**
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Projects
 
-**Use Lovable**
+### 01 — Rizzume · AI Resume Tailoring Platform
+Chrome MV3 extension that auto-detects LinkedIn job postings and triggers a tailored resume + cover letter pipeline. FastAPI backend integrates FAISS vector search (RAG over resume chunks), LLM-driven bullet rewriting, ATS keyword scoring, and pdflatex compilation. Documented the API contract before implementation so frontend and backend could progress in parallel.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4803159b-4b71-4749-9874-be2c3ecfc656) and start prompting.
+- **Stack:** Chrome Extension, FastAPI, RAG / FAISS, LLM, LaTeX, Docker
+- **Impact:** ~90% reduction in application turnaround time
+- **Repo:** [Anush2712/Rizzume](https://github.com/Anush2712/Rizzume)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+### 02 — DublinBusNet · Real-Time Distributed Transit Tracker
+Microservices system tracking Dublin Bus in real time. Python ingestion service polls GTFS-RT feeds every 30 s and writes to Redis; TypeScript/Express backend serves the REST API; React + MapLibre frontend renders live bus positions on a map. Built as UCD COMP41720 Distributed Systems capstone demonstrating fault tolerance and async communication patterns.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Stack:** Python, TypeScript, GTFS-RT, Redis, React, MapLibre, Docker
+- **Role:** Team project — capstone for COMP41720 Distributed Systems
+- **Repo:** [frederick2003/DublinBusNet](https://github.com/frederick2003/DublinBusNet-A-Distributed-Real-Time-Public-Transport-Tracker)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 03 — Dublin Bikes Forecasting · Demand Prediction & Live Dashboard
+Production demand-forecasting service for Dublin Bikes. Built a Python ingestion pipeline over the live JCDecaux API, engineered features for weather and public holidays, and trained regression models achieving R² ≈ 0.99 on hold-out data. Deployed behind a Flask endpoint with weekly stakeholder accuracy reporting.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Stack:** Python, Pandas, scikit-learn, Flask, Time-Series forecasting
+- **Impact:** R² ≈ 0.99 on hold-out test data
+- **Repo:** [xiaoxiajin/Dublin_Bikes](https://github.com/xiaoxiajin/Dublin_Bikes)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 04 — Taximize · Taxi Demand Operations Platform
+Cross-functional Agile build of a predictive platform for taxi demand in high-demand zones. Coordinated delivery in JIRA through sprints and retrospectives; contributed to the Python ML model and Flask service layer. Used AI-assisted tooling (Claude, GitHub Copilot) to accelerate prototyping without dropping review quality.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Stack:** Python, scikit-learn, Flask, Agile / JIRA
+- **Impact:** Full delivery from requirements to deployment
+- **Repo:** [matiasenrique/Taximize](https://github.com/matiasenrique/Taximize)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Tech
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4803159b-4b71-4749-9874-be2c3ecfc656) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- HTML · CSS · JavaScript (no framework)
+- GSAP + ScrollTrigger for animations
+- Bayer ordered-dithering on Canvas 2D
+- GitHub Pages for hosting
