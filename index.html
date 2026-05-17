@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anush Choudhary — Graduate Analyst &amp; Developer</title>
+  <meta name="description" content="Graduate analyst and developer based in Dublin. MSc Computer Science (UCD). Data, systems, and operational problem-solving." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── PRELOADER ─────────────────────────────────────────── -->
+  <div id="preloader">
+    <div class="pre-content">
+      <div class="pre-counter" id="pre-counter">00</div>
+      <div class="pre-bar-wrap"><div class="pre-bar-fill" id="pre-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ── CURSOR ────────────────────────────────────────────── -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">AC</a>
+    <div class="nav-center">
+      <span class="nav-role">Graduate Analyst &amp; Developer</span>
+    </div>
+    <div class="nav-right">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="mailto:anushchoudhary27@gmail.com" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Dublin &nbsp;·&nbsp; MSc CS &nbsp;·&nbsp; Available Now</div>
+      <h1 class="hero-name">
+        <div class="hero-line"><span>Anush</span></div>
+        <div class="hero-line"><em>Choudhary</em></div>
+      </h1>
+      <div class="hero-descriptor">Data &nbsp;·&nbsp; Systems &nbsp;·&nbsp; Delivery</div>
+    </div>
+    <!-- Dithering animation: right-side decorative canvas -->
+    <div class="hero-dither-wrap">
+      <canvas id="hero-dither"></canvas>
+    </div>
+    <div class="hero-bottom">
+      <div class="scroll-hint">
+        <div class="scroll-arrow">↓</div>
+        <span>Scroll</span>
+      </div>
+      <div class="hero-progress-wrap">
+        <div class="hero-progress-fill" id="hero-progress"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MANIFESTO ─────────────────────────────────────────── -->
+  <section id="manifesto">
+    <div class="manifesto-wrap">
+
+      <div class="manifesto-left">
+        <div class="manifesto-img-slot">
+          <div class="img-placeholder">
+            <img src="pictures/My photo.jpeg" alt="Anush Choudhary">
+          </div>
+          <p class="manifesto-caption">Makkena Bala Anush Choudhary<br>Dublin, Ireland</p>
+        </div>
+      </div>
+
+      <div class="manifesto-right">
+        <div class="manifesto-item">
+          <span class="mf-num">01</span>
+          <p class="mf-text">I turn messy data<br>into decisions<br><em>that stick.</em></p>
+        </div>
+        <div class="manifesto-item">
+          <span class="mf-num">02</span>
+          <p class="mf-text">Root cause first.<br><em>Symptoms last.</em></p>
+        </div>
+        <div class="manifesto-item">
+          <span class="mf-num">03</span>
+          <p class="mf-text">Systems built<br>to survive after<br><em>I leave the room.</em></p>
+        </div>
+        <div class="manifesto-item">
+          <span class="mf-num">04</span>
+          <p class="mf-text">Documentation isn't overhead —<br>it's how<br><em>knowledge compounds.</em></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT BIO ──────────────────────────────────────────── -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="section-label">About</div>
+      <p class="about-big">
+        Detail-oriented graduate analyst with operational support experience at Tech Mahindra (Verizon). Strong in change-controlled, audit-ready environments. Equally at home in Python notebooks and stakeholder decks.
+      </p>
+      <div class="about-meta-grid">
+        <div class="about-meta-item">
+          <span class="meta-key">Location</span>
+          <span class="meta-val">Dublin, Ireland</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="meta-key">Degree</span>
+          <span class="meta-val">MSc Computer Science &nbsp;·&nbsp; UCD &nbsp;·&nbsp; 2:1 (proj.)</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="meta-key">Background</span>
+          <span class="meta-val">BTech Mechanical Engineering &nbsp;·&nbsp; Amrita University</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="meta-key">Available</span>
+          <span class="meta-val">Immediately &nbsp;·&nbsp; Full work authorisation in Ireland</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ────────────────────────────────────────── -->
+  <section id="experience">
+    <div class="exp-inner">
+      <div class="section-label">Experience</div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Technical Associate</h3>
+            <p class="exp-company">Tech Mahindra <span class="exp-client">· Client: Verizon</span></p>
+          </div>
+          <div class="exp-dates">
+            <span>Dec 2023 – Jun 2024</span>
+            <span class="exp-location">Hyderabad, India</span>
+          </div>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Root-cause analysis across Verizon's customer-facing platforms (Avaya, ACSS, Agent Assist), reducing repeat incidents by <strong>~60%</strong>.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Authored runbooks and triage procedures in Confluence; standardised documentation reduced resolution time by <strong>~15%</strong>.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Operated within strict change-control and audit frameworks — every change peer-reviewed, documented, and signed off.</p>
+          </div>
+        </div>
+        <div class="exp-tag-row">
+          <span class="tag">SLA Operations</span>
+          <span class="tag">Root-Cause Analysis</span>
+          <span class="tag">Confluence</span>
+          <span class="tag">Incident Triage</span>
+          <span class="tag">Change Control</span>
+          <span class="tag">Stakeholder Reporting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────────── -->
+  <section id="work">
+    <div class="work-header">
+      <div class="section-label">Projects</div>
+    </div>
+
+    <!-- 01 Rizzume -->
+    <div class="project-row">
+      <div class="project-media">
+        <img src="pictures/rizzume.png" alt="Rizzume">
+      </div>
+      <div class="project-info">
+        <div class="project-num">01</div>
+        <h3 class="project-name">Rizzume</h3>
+        <p class="project-tagline">AI Resume Tailoring Platform</p>
+        <p class="project-desc">
+          Chrome MV3 extension that auto-detects LinkedIn job postings and triggers a tailored resume + cover letter pipeline. FastAPI backend integrates FAISS vector search (RAG over resume chunks), LLM-driven bullet rewriting, ATS keyword scoring, and pdflatex compilation. Documented the API contract before implementation so frontend and backend could progress in parallel.
+        </p>
+        <div class="project-stat">~90% reduction in application turnaround time</div>
+        <div class="project-tag-row">
+          <span class="tag">Chrome Extension</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">RAG / FAISS</span>
+          <span class="tag">LLM</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">Docker</span>
+        </div>
+        <!-- ★ Update href to your GitHub repo URL -->
+        <a href="https://github.com/Anush2712/Rizzume" class="project-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- 02 DublinBusNet -->
+    <div class="project-row reverse">
+      <div class="project-media">
+        <img src="pictures/dublinbusnet.png" alt="DublinBusNet">
+      </div>
+      <div class="project-info">
+        <div class="project-num">02</div>
+        <h3 class="project-name">DublinBusNet</h3>
+        <p class="project-tagline">Real-Time Distributed Transit Tracker</p>
+        <p class="project-desc">
+          Microservices system tracking Dublin Bus in real time. Python ingestion polls GTFS-RT feeds every 30 s and writes to Redis; TypeScript/Express backend serves the REST API; React + MapLibre frontend renders live bus positions. Built as UCD Distributed Systems capstone demonstrating fault tolerance and async communication.
+        </p>
+        <div class="project-stat">Team project · COMP41720 Distributed Systems capstone</div>
+        <div class="project-tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">GTFS-RT</span>
+          <span class="tag">Redis</span>
+          <span class="tag">React</span>
+          <span class="tag">Docker</span>
+        </div>
+        <a href="https://github.com/frederick2003/DublinBusNet-A-Distributed-Real-Time-Public-Transport-Tracker" class="project-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- 03 Dublin Bikes -->
+    <div class="project-row">
+      <div class="project-media">
+        <img src="pictures/Dublin bikes.jpg" alt="Dublin Bikes Forecasting">
+      </div>
+      <div class="project-info">
+        <div class="project-num">03</div>
+        <h3 class="project-name">Dublin Bikes Forecasting</h3>
+        <p class="project-tagline">Demand Prediction &amp; Live Dashboard</p>
+        <p class="project-desc">
+          Production demand-forecasting service for Dublin Bikes. Python ingestion pipeline over the live API, feature engineering for weather and public holidays, regression models tuned to R² ≈ 0.99 on hold-out data, deployed behind a Flask endpoint with weekly stakeholder accuracy reporting.
+        </p>
+        <div class="project-stat">R² ≈ 0.99 on hold-out test data</div>
+        <div class="project-tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Time-Series</span>
+          <span class="tag">UAT</span>
+        </div>
+        <!-- ★ Update href to your GitHub repo URL -->
+        <a href="https://github.com/xiaoxiajin/Dublin_Bikes" class="project-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- 04 Taximize -->
+    <div class="project-row reverse">
+      <div class="project-media project-media--portrait">
+        <img src="pictures/Taximize.gif" alt="Taximize">
+      </div>
+      <div class="project-info">
+        <div class="project-num">04</div>
+        <h3 class="project-name">Taximize</h3>
+        <p class="project-tagline">Taxi Demand Operations Platform</p>
+        <p class="project-desc">
+          Cross-functional Agile build of a predictive platform for taxi demand in high-demand zones. Coordinated delivery in JIRA through sprints and retrospectives; contributed to the Python ML model and Flask service layer. Used AI-assisted tooling (Claude, GitHub Copilot) to accelerate prototyping without dropping review quality.
+        </p>
+        <div class="project-stat">Full delivery from requirements to deployment</div>
+        <div class="project-tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Agile / JIRA</span>
+          <span class="tag">AI-Assisted Dev</span>
+        </div>
+        <!-- ★ Update href to your GitHub repo URL -->
+        <a href="https://github.com/matiasenrique/Taximize" class="project-link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="skills-inner">
+      <div class="section-label">Skills</div>
+      <div class="skills-grid">
+
+        <div class="skills-col">
+          <h4 class="skills-col-title">Data &amp; Analysis</h4>
+          <ul class="skills-list">
+            <li>SQL — joins, aggregations, optimisation</li>
+            <li>Excel — PivotTables, lookups, formulas</li>
+            <li>Python — Pandas, NumPy, scikit-learn</li>
+            <li>Power BI &nbsp;·&nbsp; Tableau</li>
+            <li>Static data maintenance &amp; integrity checks</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h4 class="skills-col-title">Operations &amp; Governance</h4>
+          <ul class="skills-list">
+            <li>SLA-driven operations</li>
+            <li>Root-cause analysis &amp; incident triage</li>
+            <li>Change-control &amp; audit-ready documentation</li>
+            <li>Compliance mindset</li>
+            <li>Onboarding workflow support</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h4 class="skills-col-title">Delivery &amp; BA</h4>
+          <ul class="skills-list">
+            <li>Requirements gathering &amp; stakeholder coordination</li>
+            <li>JIRA &nbsp;·&nbsp; Confluence &nbsp;·&nbsp; Agile / Scrum</li>
+            <li>KPI definition &amp; acceptance testing</li>
+            <li>Status reporting &amp; dependency tracking</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h4 class="skills-col-title">Technical</h4>
+          <ul class="skills-list">
+            <li>FastAPI &nbsp;·&nbsp; Flask &nbsp;·&nbsp; REST APIs</li>
+            <li>PostgreSQL &nbsp;·&nbsp; MySQL</li>
+            <li>Docker &nbsp;·&nbsp; AWS (EC2, S3)</li>
+            <li>Git / GitHub</li>
+            <li>Java (working knowledge)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ──────────────────────────────────────────── -->
+  <section id="education">
+    <div class="edu-inner">
+      <div class="section-label">Education</div>
+
+      <div class="edu-row">
+        <div class="edu-year">2024 – 2025</div>
+        <div class="edu-detail">
+          <h3 class="edu-degree">MSc Computer Science</h3>
+          <p class="edu-school">University College Dublin, Ireland</p>
+          <p class="edu-note">Coursework completed Dec 2025 &nbsp;·&nbsp; Conferral Summer 2026 &nbsp;·&nbsp; Projected 2:1 Honours</p>
+          <p class="edu-modules">Data Analytics &nbsp;·&nbsp; Relational Databases &nbsp;·&nbsp; Software Engineering &nbsp;·&nbsp; Distributed Systems &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; Information Security &nbsp;·&nbsp; Web Application Development</p>
+        </div>
+      </div>
+
+      <div class="edu-divider"></div>
+
+      <div class="edu-row">
+        <div class="edu-year">2019 – 2023</div>
+        <div class="edu-detail">
+          <h3 class="edu-degree">BTech — Mechanical Engineering</h3>
+          <p class="edu-school">Amrita Vishwa Vidyapeetham, India</p>
+          <p class="edu-note">CGPA: 7.56 / 10</p>
+          <p class="edu-modules">Operations Research &nbsp;·&nbsp; Engineering Mathematics &nbsp;·&nbsp; Probability &amp; Statistics &nbsp;·&nbsp; Computational Methods &nbsp;·&nbsp; Automation &amp; IoT</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-eyebrow">Open to opportunities</div>
+      <h2 class="contact-heading">
+        <span>Let's build</span><br>
+        <em>something together.</em>
+      </h2>
+      <a href="mailto:anushchoudhary27@gmail.com" class="contact-email">
+        anushchoudhary27@gmail.com
+      </a>
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/anushchoudhary" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="social-sep">/</span>
+        <a href="https://github.com/anushchoudhary" target="_blank" rel="noopener">GitHub</a>
+        <span class="social-sep">/</span>
+        <a href="tel:+353870362657">+353 87 036 2657</a>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <span>© 2026 Makkena Bala Anush Choudhary</span>
+      <span>Dublin, Ireland</span>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
