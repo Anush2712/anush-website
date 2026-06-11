@@ -3,17 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anush Choudhary — Graduate Analyst &amp; Developer</title>
-  <meta name="description" content="Graduate analyst and developer based in Dublin. MSc Computer Science (UCD). Data, systems, and operational problem-solving." />
+  <title>Anush Choudhary — Analyst, Developer &amp; Engineer</title>
+  <meta name="description" content="Makkena Bala Anush Choudhary — graduate analyst and developer. MSc Computer Science (UCD), BTech Mechanical Engineering (Amrita). Data, systems, automation and delivery." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <script>
+    // Apply saved colour theme before first paint to avoid a flash
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
 
@@ -29,28 +40,38 @@
   <div id="cursor-dot"></div>
   <div id="cursor-ring"></div>
 
+  <!-- ── THEME SWITCHER ───────────────────────────────────── -->
+  <div id="theme-switcher" role="group" aria-label="Colour theme">
+    <button class="theme-dot" data-theme="champagne" aria-label="Champagne theme" title="Champagne" style="--dot:#d8b98c"></button>
+    <button class="theme-dot" data-theme="jade" aria-label="Jade theme" title="Jade" style="--dot:#97cfba"></button>
+    <button class="theme-dot" data-theme="rose" aria-label="Rose theme" title="Rose" style="--dot:#dfa49c"></button>
+    <button class="theme-dot" data-theme="iris" aria-label="Iris theme" title="Iris" style="--dot:#b4a7ef"></button>
+  </div>
+
   <!-- ── NAV ──────────────────────────────────────────────── -->
   <nav id="nav">
     <a href="#hero" class="nav-logo">AC</a>
     <div class="nav-center">
-      <span class="nav-role">Graduate Analyst &amp; Developer</span>
+      <span class="nav-role">Analyst &nbsp;·&nbsp; Developer &nbsp;·&nbsp; Engineer</span>
     </div>
     <div class="nav-right">
       <a href="#work" class="nav-link">Work</a>
+      <a href="#certifications" class="nav-link">Certs</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="mailto:anushchoudhary27@gmail.com" class="nav-cta">Get in touch</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
     </div>
   </nav>
 
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="hero-eyebrow">Dublin &nbsp;·&nbsp; MSc CS &nbsp;·&nbsp; Available Now</div>
+      <div class="hero-eyebrow">Makkena Bala Anush Choudhary</div>
       <h1 class="hero-name">
         <div class="hero-line"><span>Anush</span></div>
         <div class="hero-line"><em>Choudhary</em></div>
       </h1>
-      <div class="hero-descriptor">Data &nbsp;·&nbsp; Systems &nbsp;·&nbsp; Delivery</div>
+      <div class="hero-descriptor">Data &nbsp;·&nbsp; Systems &nbsp;·&nbsp; Automation &nbsp;·&nbsp; Delivery</div>
+      <div class="hero-sub">Dublin &nbsp;/&nbsp; Hyderabad &nbsp;—&nbsp; Available now</div>
     </div>
     <!-- Dithering animation: right-side decorative canvas -->
     <div class="hero-dither-wrap">
@@ -76,7 +97,7 @@
           <div class="img-placeholder">
             <img src="pictures/My photo.jpeg" alt="Anush Choudhary">
           </div>
-          <p class="manifesto-caption">Makkena Anush Choudhary<br>Dublin, Ireland</p>
+          <p class="manifesto-caption">Makkena Bala Anush Choudhary<br>Dublin, Ireland &nbsp;·&nbsp; Hyderabad, India</p>
         </div>
       </div>
 
@@ -95,7 +116,7 @@
         </div>
         <div class="manifesto-item">
           <span class="mf-num">04</span>
-          <p class="mf-text">Documentation isn't overhead —<br>it's how<br><em>knowledge compounds.</em></p>
+          <p class="mf-text">From steel plants<br>to software —<br><em>engineering is engineering.</em></p>
         </div>
       </div>
 
@@ -107,20 +128,28 @@
     <div class="about-inner">
       <div class="section-label">About</div>
       <p class="about-big">
-        Detail-oriented graduate analyst with operational support experience at Tech Mahindra (Verizon). Strong in change-controlled, audit-ready environments. Equally at home in Python notebooks and stakeholder decks.
+        Graduate analyst and developer with a mechanical engineering foundation — from steel-plant workshops and self-balancing robots to Python pipelines and distributed systems. Strong in change-controlled, audit-ready environments. Equally at home in notebooks and stakeholder decks.
       </p>
       <div class="about-meta-grid">
         <div class="about-meta-item">
           <span class="meta-key">Location</span>
-          <span class="meta-val">Dublin, Ireland</span>
+          <span class="meta-val">Dublin, Ireland &nbsp;·&nbsp; Hyderabad, India</span>
         </div>
         <div class="about-meta-item">
-          <span class="meta-key">Degree</span>
-          <span class="meta-val">MSc Computer Science &nbsp;·&nbsp; UCD &nbsp;·&nbsp; 2:1 (proj.)</span>
+          <span class="meta-key">Degrees</span>
+          <span class="meta-val">MSc Computer Science (UCD) &nbsp;·&nbsp; BTech Mechanical (Amrita, First Class)</span>
         </div>
         <div class="about-meta-item">
-          <span class="meta-key">Background</span>
-          <span class="meta-val">BTech Mechanical Engineering &nbsp;·&nbsp; Amrita University</span>
+          <span class="meta-key">Languages</span>
+          <span class="meta-val">English &nbsp;·&nbsp; Hindi &nbsp;·&nbsp; Telugu</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="meta-key">Phone</span>
+          <span class="meta-val">+353 87 036 2657 &nbsp;·&nbsp; +91 79930 47589</span>
+        </div>
+        <div class="about-meta-item">
+          <span class="meta-key">Email</span>
+          <span class="meta-val">anushchoudhary27@gmail.com</span>
         </div>
         <div class="about-meta-item">
           <span class="meta-key">Available</span>
@@ -166,9 +195,107 @@
           <span class="tag">Confluence</span>
           <span class="tag">Incident Triage</span>
           <span class="tag">Change Control</span>
-          <span class="tag">Stakeholder Reporting</span>
         </div>
       </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Team Lead / Team Manager</h3>
+            <p class="exp-company">Excellerate <span class="exp-client">· Project Management Programme</span></p>
+          </div>
+          <div class="exp-dates">
+            <span>Aug 2023 – Sep 2023</span>
+            <span class="exp-location">Remote, India</span>
+          </div>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Led a global team to deliver a budgeted, time-bound <strong>3-day virtual event</strong> — orchestrated end-to-end within all designated constraints.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Drove planning with Project Charter, Scope, WBS, Instagantt, Miro, Canva and RACI matrices; managed stakeholders and risk across timezones.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Won a <strong>$500 micro-scholarship</strong> for best collaboration and presentation skills.</p>
+          </div>
+        </div>
+        <div class="exp-tag-row">
+          <span class="tag">Project Management</span>
+          <span class="tag">WBS</span>
+          <span class="tag">RACI</span>
+          <span class="tag">Stakeholder Management</span>
+          <span class="tag">Risk Management</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">Technical Trainee</h3>
+            <p class="exp-company">RINL <span class="exp-client">· Vizag Steel Plant</span></p>
+          </div>
+          <div class="exp-dates">
+            <span>Jun 2022 – Jul 2022</span>
+            <span class="exp-location">Visakhapatnam, India</span>
+          </div>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Executed the project <strong>"Basics in Fabrication of Equipment Spares"</strong> across the Engineering Shops &amp; Foundry division — Central Machine Shop, Forge Shop, Steel Structural Shop and Utility Equipment Repair Shop.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Hands-on fabrication and repair of emergency containers, buck stays, laminated crane hooks and scrap-charging buckets.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Worked with gas CNC cutting, thermite &amp; CNC welding, non-destructive testing, line-guided vehicles and industrial robotics.</p>
+          </div>
+        </div>
+        <div class="exp-tag-row">
+          <span class="tag">CNC / G-codes</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">Welding</span>
+          <span class="tag">NDT</span>
+          <span class="tag">Industrial Robotics</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div>
+            <h3 class="exp-role">In-plant Trainee</h3>
+            <p class="exp-company">Deccan Packing Systems</p>
+          </div>
+          <div class="exp-dates">
+            <span>Dec 2019 – Jan 2020</span>
+            <span class="exp-location">Hyderabad, India</span>
+          </div>
+        </div>
+        <div class="exp-bullets">
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Integrated microcontrollers with <strong>high-speed servo-controlled packing machines</strong> to meet strict time-domain constraints — a substantial lift in productivity and precision.</p>
+          </div>
+          <div class="exp-bullet">
+            <span class="bullet-dash">—</span>
+            <p>Worked across Arduino and Raspberry Pi configurations, Bluetooth sensors, and motor-control encoders for process control.</p>
+          </div>
+        </div>
+        <div class="exp-tag-row">
+          <span class="tag">Automation</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Servo Control</span>
+          <span class="tag">Process Control</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -199,7 +326,6 @@
           <span class="tag">LaTeX</span>
           <span class="tag">Docker</span>
         </div>
-        <!-- ★ Update href to your GitHub repo URL -->
         <a href="https://github.com/Anush2712/Rizzume" class="project-link" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
           View on GitHub
@@ -254,9 +380,7 @@
           <span class="tag">scikit-learn</span>
           <span class="tag">Flask</span>
           <span class="tag">Time-Series</span>
-          <span class="tag">UAT</span>
         </div>
-        <!-- ★ Update href to your GitHub repo URL -->
         <a href="https://github.com/xiaoxiajin/Dublin_Bikes" class="project-link" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
           View on GitHub
@@ -284,7 +408,6 @@
           <span class="tag">Agile / JIRA</span>
           <span class="tag">AI-Assisted Dev</span>
         </div>
-        <!-- ★ Update href to your GitHub repo URL -->
         <a href="https://github.com/matiasenrique/Taximize" class="project-link" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
           View on GitHub
@@ -292,6 +415,150 @@
       </div>
     </div>
 
+    <!-- 05 Cartesian 3D Printer -->
+    <div class="project-row">
+      <div class="project-media">
+        <!-- ★ ADD YOUR PHOTO: drop an image into /pictures and replace this
+             placeholder with:  <img src="pictures/3d-printer.jpg" alt="Cartesian 3D Printer"> -->
+        <div class="img-placeholder">
+          <span>Your project photo here<br><em>Add an image to /pictures<br>and update index.html</em></span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-num">05</div>
+        <h3 class="project-name">Cartesian 3D Printer</h3>
+        <p class="project-tagline">Material-Extrusion Concrete Printing · BTech Phase 1</p>
+        <p class="project-desc">
+          Design and development of a material-extrusion Cartesian 3D printer at Amrita Vishwa Vidyapeetham. Researched gantry systems and extrusion mechanisms, engineered a specialised concrete extruder that eliminates air bubbles for smoother material flow, and introduced a novel hexagonal-infill brick — validated through FEM, thermal and structural analysis against conventional methods.
+        </p>
+        <div class="project-stat">May 2022 – Nov 2022 · Amrita Vishwa Vidyapeetham</div>
+        <div class="project-tag-row">
+          <span class="tag">Autodesk Inventor</span>
+          <span class="tag">ANSYS APDL</span>
+          <span class="tag">CATIA V5</span>
+          <span class="tag">Ultimaker CURA</span>
+          <span class="tag">FEA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 Self-Balancing Robot -->
+    <div class="project-row reverse">
+      <div class="project-media">
+        <!-- ★ ADD YOUR PHOTO: drop an image into /pictures and replace this
+             placeholder with:  <img src="pictures/balancing-robot.jpg" alt="Self-Balancing Robot"> -->
+        <div class="img-placeholder">
+          <span>Your project photo here<br><em>Add an image to /pictures<br>and update index.html</em></span>
+        </div>
+      </div>
+      <div class="project-info">
+        <div class="project-num">06</div>
+        <h3 class="project-name">Self-Balancing Robot</h3>
+        <p class="project-tagline">Two-Wheeled Robot for Uneven Terrain · BTech Phase 2</p>
+        <p class="project-desc">
+          Two-wheeled double-inverted-pendulum robot engineered for agricultural operations. Modelled with Lagrangian dynamics and a state-space model in MATLAB Simulink; tuned PID and LQR controllers via pole placement; fabricated parts by 3D printing and integrated the full electronics, motors and motor drivers. Added a kinematically designed 4-claw gripper for handling fruit, and simulated the working prototype on uneven ground.
+        </p>
+        <div class="project-stat">Nominated for Best Project — Engineering Thesis</div>
+        <div class="project-tag-row">
+          <span class="tag">MATLAB Simulink</span>
+          <span class="tag">Control Systems</span>
+          <span class="tag">LQR / PID</span>
+          <span class="tag">Fusion 360</span>
+          <span class="tag">3D Printing</span>
+          <span class="tag">Electronics</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── CERTIFICATIONS ─────────────────────────────────────── -->
+  <section id="certifications">
+    <div class="certs-inner">
+      <div class="section-label">Courses &amp; Certifications</div>
+      <div class="certs-grid">
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="cert-org">Harvard University · edX</span>
+            <span class="cert-date">Sep – Nov 2023</span>
+          </div>
+          <h3 class="cert-name">CS50P — Introduction to Programming with Python</h3>
+          <p class="cert-desc">
+            Computational thinking and algorithmic problem-solving. Completed 9 problem sets and a final project, earning an expert-verified certificate.
+          </p>
+          <div class="cert-tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Unit Tests</span>
+            <span class="tag">Regex</span>
+          </div>
+          <!-- ★ PASTE YOUR GOOGLE DRIVE LINK in the href below -->
+          <a class="cert-link" href="#" target="_blank" rel="noopener">View Certificate <span class="cert-arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="cert-org">Indian Space Research Organisation</span>
+            <span class="cert-date">Aug – Sep 2023</span>
+          </div>
+          <h3 class="cert-name">Remote Sensing &amp; Digital Image Analysis</h3>
+          <p class="cert-desc">
+            Sensor technology across active, passive, radiometric, photometric, visible and infrared sensors. Gathered planetary colour and height data, with hands-on image processing in Python for agricultural research.
+          </p>
+          <div class="cert-tag-row">
+            <span class="tag">Remote Sensing</span>
+            <span class="tag">Image Processing</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Interpretation</span>
+          </div>
+          <!-- ★ PASTE YOUR GOOGLE DRIVE LINK in the href below -->
+          <a class="cert-link" href="#" target="_blank" rel="noopener">View Certificate <span class="cert-arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="cert-org">MathWorks Training Services</span>
+            <span class="cert-date">Jul 2023</span>
+          </div>
+          <h3 class="cert-name">MATLAB Onramp</h3>
+          <p class="cert-desc">
+            Core MATLAB for data analysis, modelling and programming — including deep-learning basics for image recognition and practical Simulink.
+          </p>
+          <div class="cert-tag-row">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Visualisation</span>
+          </div>
+          <!-- ★ PASTE YOUR GOOGLE DRIVE LINK in the href below -->
+          <a class="cert-link" href="#" target="_blank" rel="noopener">View Certificate <span class="cert-arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="cert-org">Great Learning</span>
+            <span class="cert-date">Nov 2023</span>
+          </div>
+          <h3 class="cert-name">Unsupervised Machine Learning with K-means</h3>
+          <p class="cert-desc">
+            Foundations of unsupervised learning with the K-means algorithm — preprocessing and data preparation, clustering, and evaluation of clustering results on real-world applications.
+          </p>
+          <div class="cert-tag-row">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Clustering</span>
+            <span class="tag">Preprocessing</span>
+            <span class="tag">Evaluation</span>
+          </div>
+          <!-- ★ PASTE YOUR GOOGLE DRIVE LINK in the href below -->
+          <a class="cert-link" href="#" target="_blank" rel="noopener">View Certificate <span class="cert-arrow">↗</span></a>
+        </article>
+
+      </div>
+    </div>
   </section>
 
   <!-- ── SKILLS ─────────────────────────────────────────────── -->
@@ -343,6 +610,26 @@
           </ul>
         </div>
 
+        <div class="skills-col">
+          <h4 class="skills-col-title">Engineering &amp; CAD</h4>
+          <ul class="skills-list">
+            <li>MATLAB &amp; Simulink</li>
+            <li>ANSYS Workbench &amp; APDL</li>
+            <li>CATIA V5R6 &nbsp;·&nbsp; Fusion 360</li>
+            <li>Ultimaker CURA &nbsp;·&nbsp; 3D printing</li>
+            <li>Control systems — PID, LQR, state space</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h4 class="skills-col-title">Languages &amp; Labs</h4>
+          <ul class="skills-list">
+            <li>English &nbsp;·&nbsp; Hindi &nbsp;·&nbsp; Telugu</li>
+            <li>Robotics Lab</li>
+            <li>3D Printing Lab</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>
@@ -368,12 +655,72 @@
         <div class="edu-year">2019 – 2023</div>
         <div class="edu-detail">
           <h3 class="edu-degree">BTech — Mechanical Engineering</h3>
-          <p class="edu-school">Amrita Vishwa Vidyapeetham, India</p>
-          <p class="edu-note">CGPA: 7.56 / 10</p>
-          <p class="edu-modules">Operations Research &nbsp;·&nbsp; Engineering Mathematics &nbsp;·&nbsp; Probability &amp; Statistics &nbsp;·&nbsp; Computational Methods &nbsp;·&nbsp; Automation &amp; IoT</p>
+          <p class="edu-school">Amrita Vishwa Vidyapeetham, Coimbatore, India</p>
+          <p class="edu-note">First Class &nbsp;·&nbsp; CGPA 7.56 / 10 &nbsp;·&nbsp; Graduated Aug 2023 &nbsp;·&nbsp; Gold medal — university basketball league</p>
+          <p class="edu-modules">Relevant coursework: Automation &amp; Robotics (final-semester project) &nbsp;·&nbsp; Operations Research &nbsp;·&nbsp; Engineering Mathematics &nbsp;·&nbsp; Probability &amp; Statistics &nbsp;·&nbsp; Computational Methods &nbsp;·&nbsp; Automation &amp; IoT</p>
         </div>
       </div>
 
+      <div class="edu-divider"></div>
+
+      <div class="edu-row">
+        <div class="edu-year">2017 – 2019</div>
+        <div class="edu-detail">
+          <h3 class="edu-degree">Higher Secondary — Science</h3>
+          <p class="edu-school">Sri Chaitanya Jr Kalasala, Hyderabad, India</p>
+          <p class="edu-note">79.2% &nbsp;·&nbsp; Science stream</p>
+        </div>
+      </div>
+
+      <div class="edu-divider"></div>
+
+      <div class="edu-row">
+        <div class="edu-year">2016 – 2017</div>
+        <div class="edu-detail">
+          <h3 class="edu-degree">Secondary Education</h3>
+          <p class="edu-school">St. Gabriel's High School, Warangal, India</p>
+          <p class="edu-note">Telangana State Board &nbsp;·&nbsp; CGPA 8.8</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── LEADERSHIP & BEYOND ────────────────────────────────── -->
+  <section id="leadership">
+    <div class="lead-inner">
+      <div class="section-label">Leadership &amp; Beyond</div>
+      <div class="lead-grid">
+
+        <div class="lead-col">
+          <h4 class="lead-col-title">Leadership</h4>
+          <ul class="lead-list">
+            <li>Class Representative for <strong>5 consecutive semesters</strong> — advocating and communicating for peers' needs.</li>
+            <li>Joint committee member, Association of Mechanical Engineering — decision-making and collaboration.</li>
+            <li>Vice-Captain, university basketball team — strategic planning and motivation.</li>
+          </ul>
+        </div>
+
+        <div class="lead-col">
+          <h4 class="lead-col-title">Activities</h4>
+          <ul class="lead-list">
+            <li>Managed university Ganesh Chaturthi &amp; Ugadi events under the Manoharam Club.</li>
+            <li>Organised an Auto Expo under ACME — a fundraiser for the Department of Mechanical Engineering.</li>
+            <li>Conducted a drone show under the wing of the Robotics Club.</li>
+          </ul>
+        </div>
+
+        <div class="lead-col">
+          <h4 class="lead-col-title">Achievements</h4>
+          <ul class="lead-list">
+            <li>Gold medal — university-level basketball league.</li>
+            <li>Nominated for Best Project under Engineering Thesis.</li>
+            <li>Gokulastami cultural event — winner in 1st year, runner-up in final year.</li>
+            <li>$500 micro-scholarship — Excellerate, best collaboration &amp; presentation.</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -394,14 +741,16 @@
         <a href="https://github.com/anushchoudhary" target="_blank" rel="noopener">GitHub</a>
         <span class="social-sep">/</span>
         <a href="tel:+353870362657">+353 87 036 2657</a>
+        <span class="social-sep">/</span>
+        <a href="tel:+917993047589">+91 79930 47589</a>
       </div>
     </div>
     <footer class="site-footer">
-      <span>© 2026 Makkena Anush Choudhary</span>
-      <span>Dublin, Ireland</span>
+      <span>© 2026 Makkena Bala Anush Choudhary</span>
+      <span>Dublin &nbsp;·&nbsp; Hyderabad</span>
     </footer>
   </section>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
